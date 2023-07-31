@@ -49,6 +49,15 @@
 })();
 
 // Place any code in here.
+
+function setCurrentYear() {
+  const currentYear = new Date().getFullYear();
+  $('#year').text(currentYear);
+}
+
+setCurrentYear();
+
+
 $(function() {
   "use strict";
 
