@@ -130,6 +130,12 @@ $(function() {
   $(".navbar-toggler", $navbar).on("click", function() {
     if (!$navbar.is(".st-nav")) $navbar.toggleClass("navbar-expanded");
   });
+  var $navmobilecont = $(".st-nav-mobile ");
+
+
+  $(".nav-link",$navmobilecont).on("click", function() {
+    if ($navmobilecont.is(".st-popup-active")) $navmobilecont.removeClass("st-popup-active");
+  });
 
   /**
    * Blog interaction with buttons: favorite and bookmark
